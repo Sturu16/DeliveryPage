@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --grey: #777776;
+    --yellow: #FDC72D;
+    --footercolor:#FEE395;
+}
+@font-face {
+    font-family: poppinsregular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppinsmedium;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: poppinssemibold;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+body{
+    background-color: var(--white);
+}
+h2, h3, h4, h5, p{
+    color: var(--black);
+}
+header{
+    padding: 44px 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 a{
+    color: var(--black);
+    font-size: 20px;
+    font-family: poppinssemibold;
+}
+header ul{
+    width: 564px;
+    display: flex;
+    justify-content: space-between;
+}
+header ul a{
+    padding: 8px 10px;
+    font-family: poppinssemibold;
+    color: var(--black);
+    position: relative;
+}
+.active::before{
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--black);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+header .fa-toggle-off, header .fa-toggle-on{
+    font-size: 32px;
+}
+header .order a, .getstarted a{
+    padding: 16px 32px;
+    background-color: var(--yellow);
+    font-family: poppinssemibold;
+    color: var(--black);
+    border-radius: 62px;
+}
+header .order a::after{
+    content: "!";
+}
+header a{
+    text-transform: capitalize;
+}
+
+main{
+    padding: 20px 40px 50px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hometext{
+    width: 500px;
+}
+.hometext h2{
+    font-size: 60px;
+    font-family: poppinsregular;
+    font-weight: 700;
+}
+.hometext p{
+    font-family: poppinsregular;
+    width: 394px;
+    font-size: 20px;
+    margin-top: 36px;
+    margin-bottom: 52px;
+    color: var(--grey);
+}
+.homeimage{
+    width: 870px;
+    height: 722px;
+    overflow: hidden;
+}
+.homeimage img{
+    width: 100%;
+}
+
+
+.about .hometext h2{
+    font-size: 40px;
+}
+
+/* ----- service styles ------*/
+.serv{
+    padding: 0 54px;
+}
+.serv h2{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-family: poppinssemibold;
+}
+.servcontainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 88px;
+}
+.servarticle {
+    width: 380px;
+    height: 380px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px var(--grey);
+}
+.servarticle h3{
+    padding: 34px 0;
+    text-align: center;
+    font-size: 20px;
+    font-family: poppinssemibold;
+}
+.servimg{
+    width: 202px;
+    height: 130px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.servimg2{
+    width: 146px;
+}
+.servimg3{
+    width: 152px;
+}
+.servimg img{
+    width: 100%;
+}
+.servtext{
+    font-family: poppinsmedium;
+    text-align: center;
+    color: var(--grey);
+    padding: 26px 0;
+}
+.servlink{
+    text-align: center;
+}
+.servlink a{
+    font-family: poppinssemibold;
+    font-size: 15px;
+    color: var(--black);
+}
+.servdelivery{
+    width: 1250px;
+    margin: 160px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.servdelimg{
+    width: 544px;
+}
+.servdelimg img{
+    width: 100%;
+}
+.servdelivery section{
+    width: 510px;
+}
+.servdelivery section h3{
+    font-size: 40px;
+    font-family: poppinsmedium;
+}
+.servdelivery section p{
+    font-size: 20px;
+    font-family: poppinsmedium;
+    color: var(--grey);
+}
+.storeplay{
+    width: 466px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+.storeplay a, .contactus a{
+    padding: 16px 34px;
+    border-radius: 60px;
+    background-color: var(--yellow);
+    color: var(--black);
+    font-family: poppinssemibold;
+}
+
+/* --------- contact styles------- */
+.contact{
+    padding: 140px 120px 78px 80px;
+}
+.contact section{
+    width: 506px;
+}
+.contact section h2{
+    font-size: 40px;
+    font-family: poppinssemibold;
+    color: var(--black);
+}
+.contact section p{
+    font-size: 20px;
+    font-family: poppinssemibold;
+    color: var(--grey);
+    margin-top: 30px;
+    color: var(--black);
+}
+.contactinfo{
+    width: 280px;
+}
+.contact p{
+    font-size: 20px;
+    font-family: poppinssemibold;
+    color: var(--grey);
+    margin-bottom: 14px;
+    color: var(--black);
+}
+.contact p span{
+    color: var(--black);
+}
+
+/* ---- footer styles --- */
+footer{
+    width: 100%;
+    background-color: var(--footercolor);
+    padding: 94px 210px 48px 112px;
+    display: flex;
+    justify-content: space-between;
+}
+footer h3{
+    font-size: 20px;
+    font-family: poppinssemibold;
+    margin-bottom: 22px;
+}
+footer ul li{
+    margin-bottom: 8px;
+} 
+footer ul a{
+    font-size: 16px;
+    color: var(--grey);
+    font-family: poppinssemibold;
+}
+footer .footersocial p a{
+    font-size: 26px;
+    color: var(--black);
+}
